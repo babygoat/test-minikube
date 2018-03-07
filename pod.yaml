@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    server: Webserver
+spec:
+  containers:
+  - name: pod-demo
+    image: babygoat/test-minikube
+    tty: true
+    stdin: true
+    ports:
+    - containerPort: 8080 
